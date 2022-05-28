@@ -20,7 +20,7 @@ def error(update, context):
   print(f"Update {update} cause error {context.error}")
 
 def main():
-  updater = Updater('5312448921:AAG7BY4moCffb5um5KxzmPb2K4mbNYMet0Y', use_context=True)
+  updater = Updater(keys.TELEGRAM_BOT_KEY, use_context=True)
   dp = updater.dispatcher
   dp.add_handler(CommandHandler("start", start_command))
   dp.add_handler(CommandHandler("start", help_command))
