@@ -8,6 +8,4 @@ def ai_responses(input_text):
     openai.api_key = keys.OPEN_AI_KEY
     bot_output = openai.Completion.create(engine="text-davinci-002",prompt=prompt_addition,temperature=0.7,max_tokens=200,top_p=1,frequency_penalty=0,presence_penalty=0)
     response = bot_output['choices'][0]['text']
-    print(user_message)
-    print(response)
     return response
