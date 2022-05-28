@@ -11,5 +11,6 @@ Some pre-requisites are required to use this template successfully:
 Both of these keys are then to be pasted into the constants.py file. 
 
 ```python
-import os
+OPEN_AI_KEY = "ENTER YOUR OPEN AI API KEY HERE"
+TELEGRAM_BOT_KEY = 'ENTER YOUR TELEGRAM BOTS KEY HERE'
 ```
