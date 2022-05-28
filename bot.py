@@ -6,11 +6,10 @@ import logger as lg
 print("BOT STARTED...")
 
 def start_command(update, context):
-  update.message.reply_text("Bladee is my father...")
-  ##lg.logUser(update)
+  update.message.reply_text("Ask me anything...")
 
 def help_command(update, context):
-  update.message.reply_text("u need help?")
+  update.message.reply_text("Do you need help?")
 
 def handle_message(update, context):
   text = str(update.message.text).lower()
