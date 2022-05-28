@@ -1,6 +1,6 @@
 import constants as keys
 from telegram.ext import *
-import responses as R
+import responses as resp
 import logger as lg
 
 print("BOT STARTED...")
@@ -13,7 +13,7 @@ def help_command(update, context):
 
 def handle_message(update, context):
   text = str(update.message.text).lower()
-  response = R.sample_responses(text)
+  response = resp.ai_responses(text)
 
   update.message.reply_text(response)
 
