@@ -31,3 +31,4 @@ pip install python-telegram-bot
 ```
 ## 2.1 Creating a Telegram Bot using BotFather
 
+Refer to the [following page](https://core.telegram.org/bots) to find out how to create a telegram bot which you will link with your program via its API key in the constants.py file.
